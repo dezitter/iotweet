@@ -22,4 +22,4 @@
 * [x] display profile_pic, user, date, text of tweets
 * [x] add a filter component to show/hide pictures
 * [x] make npm build script
-* [ ] prettify tweet date
+* [x] prettify tweet date
