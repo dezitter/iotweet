@@ -15,13 +15,15 @@ function buildSearchQuery(text) {
 router.get('/api/search', function(req, res) {
     var query = buildSearchQuery(req.query.text);
 
-    twit.get('search/tweets', query, function(err, data) {
+    twit.get('search/tweets', query, onSearchResult);
+
+    function onSearchResult(err, data) {
         if (err) {
             throw err;
         }
 
         res.type('json').send(data);
-    });
+    }
 });
 
 module.exports = router;
