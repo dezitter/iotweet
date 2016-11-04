@@ -8,4 +8,3 @@ ittTweetListModule
     .component('ittTweetList', IttTweetListComponent);
 
 module.exports = ittTweetListModule ;
-

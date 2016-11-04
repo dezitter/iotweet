@@ -1,5 +1,4 @@
 var angular = require('angular');
-
 var IttDateFilter = require('./date.filter');
 
 var coreFilterModule = angular.module('core.filter', [
