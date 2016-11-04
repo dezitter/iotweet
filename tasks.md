@@ -9,7 +9,6 @@
 * [x] move twit query building to helper
 * [x] move twit hardcoded count to .env
 * [x] move twit params to module
-* [ ] add an error middle ware
 
 # Front-end
 
