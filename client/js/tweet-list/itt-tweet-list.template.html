@@ -13,12 +13,16 @@
     </div>
     <!-- }}} -->
 
-    <div ng-show="$ctrl.store.tweets.length ===0" class="alert alert-info">
+    <div ng-show="($ctrl.tweets.length === 0) && ($ctrl.loading === false)" class="alert alert-warning">
       <p>No results.</p>
     </div>
 
+    <div ng-show="($ctrl.loading === true)" class="alert alert-info">
+      <p>Loading...</p>
+    </div>
+
     <!-- {{{ Tweet list -->
-    <div ng-repeat="tweet in $ctrl.store.tweets" class="row">
+    <div ng-repeat="tweet in $ctrl.tweets" class="row">
       <div class="col-md-12 tweet">
 
         <div ng-show="$ctrl.showPicture" class="tweet-profile-image col-md-1">
