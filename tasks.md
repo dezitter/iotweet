@@ -1,8 +1,14 @@
 # todo
 
+## Server
+
 * [x] bootstrap server
 * [x] send index.html
 * [ ] make `npm start` script
-* [ ] bootstrap frontend
-
 * [ ] call Twitter API https://dev.twitter.com/overview/documentation
+
+# Front-end
+
+* [x] bootstrap frontend
+* [ ] layout page
+* [ ] make npm build script

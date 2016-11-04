@@ -25,5 +25,18 @@
     "debug": "^2.2.0",
     "dotenv": "^2.0.0",
     "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "browserify": "^13.1.1",
+    "browserify-shim": "^3.8.12",
+    "watchify": "^3.7.0"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {
+    "angular": "global:angular"
   }
 }

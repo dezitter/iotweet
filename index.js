@@ -11,6 +11,7 @@ var APP_PORT = process.env.APP_PORT;
 var app = express();
 
 app.use(express.static( path.join(__dirname, 'client') ));
+app.use(express.static( path.join(__dirname, 'dist') ));
 app.use(router);
 
 app.listen(APP_PORT, function() {
