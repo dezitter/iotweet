@@ -2,6 +2,8 @@
 
 A simple web application to fetch & filter tweets including the `#iot` hashtag.
 
+![Demo](/resources/demo.gif)
+
 ## How to run
 
 1. `> git clone https://github.com/dezitter/iotweet`
