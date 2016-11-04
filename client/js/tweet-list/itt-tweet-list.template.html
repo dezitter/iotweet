@@ -1,6 +1,15 @@
+<div class="row">
+  <div class="col-md-12">
+    <label>
+      Show pictures
+      <input ng-model="$ctrl.showPicture" type="checkbox">
+    </label>
+  </div>
+</div>
+
 <div ng-repeat="tweet in $ctrl.store.tweets" class="row">
 
-  <div class="tweet-profile-image col-md-1">
+  <div ng-show="$ctrl.showPicture" class="tweet-profile-image col-md-1">
     <img ng-src="{{tweet.user.profile_image_url}}" />
   </div>
 

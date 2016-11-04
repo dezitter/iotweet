@@ -2,6 +2,7 @@ function IttTweetListController(TweetStore) {
     var vm = this;
 
     vm.store = {};
+    vm.showPicture = true;
 
     activate();
 

@@ -19,5 +19,5 @@
 * [x] add a tweet list component
 * [x] create a Store to put tweets and share between components
 * [x] display profile_pic, user, date, text of tweets
-* [ ] add a filter component to show/hide pictures
+* [x] add a filter component to show/hide pictures
 * [ ] make npm build script
