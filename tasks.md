@@ -1,7 +1,7 @@
 # todo
 
 * [x] bootstrap server
-* [ ] send index.html
+* [x] send index.html
 * [ ] make `npm start` script
 * [ ] bootstrap frontend
 
