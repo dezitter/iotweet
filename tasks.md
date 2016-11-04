@@ -11,6 +11,7 @@
 
 * [x] bootstrap frontend
 * [x] layout page
-* [ ] add a tweet search component
+* [x] add a tweet search component
+* [ ] create a TweetSearch service
 * [ ] add a tweet list component
 * [ ] make npm build script
