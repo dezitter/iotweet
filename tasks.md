@@ -6,7 +6,7 @@
 * [x] send index.html
 * [x] make `npm start` script
 * [x] call Twitter API https://dev.twitter.com/overview/documentation
-* [ ] move twit query building to helper
+* [x] move twit query building to helper
 * [ ] move twit hardcoded count to .env
 * [ ] add an error middle ware
 

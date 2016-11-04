@@ -10,12 +10,15 @@ var twit = new Twit({
 
 var router = express.Router();
 
-router.get('/api/search', function(req, res) {
-    var text = req.query.text + ' #iot';
-    var query = {
-        q: text,
+function buildSearchQuery(text) {
+    return {
+        q: (text || '') + ' #iot',
         count: 100
     };
+}
+
+router.get('/api/search', function(req, res) {
+    var query = buildSearchQuery(req.query.text);
 
     twit.get('search/tweets', query, function(err, data) {
         if (err) {
