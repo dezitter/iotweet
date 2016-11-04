@@ -4,7 +4,7 @@
 
 * [x] bootstrap server
 * [x] send index.html
-* [ ] make `npm start` script
+* [x] make `npm start` script
 * [x] call Twitter API https://dev.twitter.com/overview/documentation
 * [ ] move twit query building to helper
 * [ ] move twit hardcoded count to .env
@@ -20,4 +20,5 @@
 * [x] create a Store to put tweets and share between components
 * [x] display profile_pic, user, date, text of tweets
 * [x] add a filter component to show/hide pictures
-* [ ] make npm build script
+* [x] make npm build script
+* [ ] prettify tweet date

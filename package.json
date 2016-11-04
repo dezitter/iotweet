@@ -4,6 +4,7 @@
   "description": "A simple web application to fetch & filter tweets including the `#iot` hashtag.",
   "main": "index.js",
   "scripts": {
+    "start": "./bin/build.sh && node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
