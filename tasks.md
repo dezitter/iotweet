@@ -10,5 +10,5 @@
 # Front-end
 
 * [x] bootstrap frontend
-* [ ] layout page
+* [x] layout page
 * [ ] make npm build script
