@@ -17,7 +17,7 @@
 * [x] add a tweet search component
 * [x] create a TweetSearch service
 * [x] add a tweet list component
-* [ ] create a Store to put tweets and share between components
+* [x] create a Store to put tweets and share between components
 * [ ] display profile_pic, user, date, text of tweets
 * [ ] add a filter component to show/hide pictures
 * [ ] make npm build script
