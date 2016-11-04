@@ -24,25 +24,32 @@
     <!-- {{{ Tweet list -->
     <div ng-repeat="tweet in $ctrl.tweets" class="row">
       <div class="col-md-12 tweet">
+        <div class="row">
 
-        <div ng-show="$ctrl.showPicture" class="tweet-profile-image col-md-1">
-          <div class="thumbnail">
-            <img ng-src="{{tweet.user.profile_image_url}}" />
+          <div class="col-md-2">
+            <div class="thumbnail">
+              <img ng-show="$ctrl.showPicture" ng-src="{{tweet.user.profile_image_url}}" />
+              <div title="{{tweet.user.name}}" class="text-center tweet-user-name">{{tweet.user.name}}</div>
+            </div>
           </div>
-        </div>
 
-        <div class="tweet-profile-image col-md-1">
-          <div title="{{tweet.user.name}}" class="tweet-user-name">{{tweet.user.name}}</div>
-        </div>
+          <div class="col-md-2">
+            <div title="{{tweet.created_at}}" class="tweet-date">{{tweet.created_at | ittDate:'short' }}</div>
+          </div>
 
-        <div class="col-md-2">
-          <div title="{{tweet.created_at}}" class="tweet-date">{{tweet.created_at | ittDate:'short' }}</div>
-        </div>
+          <div ng-repeat="media in (tweet.entities.media | filter:mediaType | limitTo:1)"
+               ng-show="$ctrl.showPicture" class="col-md-2"
+               class="col-md-2">
+            <a href="{{media.media_url}}">
+              <img class="tweet-photo" ng-src="{{media.media_url}}" />
+            </a>
+          </div>
 
-        <div class="tweet-profile-image col-md-8">
-          <div class="tweet-text">{{tweet.text}}</div>
-        </div>
+          <div class="tweet-profile-image col-md-6">
+            <div class="tweet-text">{{tweet.text}}</div>
+          </div>
 
+        </div>
       </div>
     </div>
     <!-- }}} -->

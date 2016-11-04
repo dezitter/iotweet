@@ -6,6 +6,7 @@ function IttTweetListController($rootScope) {
 
     vm.tweets = [];
     vm.loading = false;
+    vm.mediaType = { type: 'photo' };
     vm.showPicture = true;
 
     activate();
