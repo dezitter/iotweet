@@ -2,7 +2,6 @@ var dotenv = require('dotenv');
 
 dotenv.config();
 
-var debug = require('debug')('iotweet:http');
 var express = require('express');
 var path = require('path');
 var router = require('./server/router');
@@ -15,5 +14,5 @@ app.use(express.static( path.join(__dirname, 'dist') ));
 app.use(router);
 
 app.listen(APP_PORT, function() {
-    debug('Listening on port %d', APP_PORT);
+    console.log('Server listening on port %d', APP_PORT);
 });
