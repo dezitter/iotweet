@@ -7,8 +7,14 @@ function IttTweetSearchController($rootScope, TweetSearch) {
     function onSubmit() {
         $rootScope.$emit('search:request');
 
-        TweetSearch.get(vm.text).then(function(response) {
-            $rootScope.$emit('search:resolve', response.data.statuses);
+        searchTweet(vm.text).then(function(tweets) {
+            $rootScope.$emit('search:resolve', tweets);
+        });
+    }
+
+    function searchTweet(text) {
+        return TweetSearch.get(text).then(function(response) {
+            return response.data.statuses;
         });
     }
 }
