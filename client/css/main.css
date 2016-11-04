@@ -1,0 +1,33 @@
+html, body {
+    background-color: #eee;
+}
+
+/* {{{ Tweet list styles */
+
+.tweet {
+    min-height: 60px;
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+}
+
+.tweet:hover {
+    background-color: #eee;
+}
+
+.tweet-date,
+.tweet-user-name
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+/* }}} */
+/* {{{ Tweet search styles */
+
+.tweet-search-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* }}} */
