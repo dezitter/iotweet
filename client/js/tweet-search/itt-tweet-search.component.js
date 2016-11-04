@@ -1,3 +1,6 @@
+var fs = require('fs');
+var template = fs.readFileSync( __dirname + '/itt-tweet-search.template.html', 'utf8');
+
 function IttTweetSearchController($rootScope, TweetSearch) {
     var vm = this;
 
@@ -25,5 +28,5 @@ module.exports = {
         'core.tweetSearch',
         IttTweetSearchController
     ],
-    templateUrl: '/js/tweet-search/itt-tweet-search.template.html'
+    template: template
 };

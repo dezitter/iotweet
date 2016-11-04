@@ -1,3 +1,6 @@
+var fs = require('fs');
+var template = fs.readFileSync( __dirname + '/itt-tweet-list.template.html', 'utf8');
+
 function IttTweetListController($rootScope) {
     var vm = this;
 
@@ -28,5 +31,5 @@ module.exports = {
         '$rootScope',
         IttTweetListController
     ],
-    templateUrl: '/js/tweet-list/itt-tweet-list.template.html'
+    template: template
 };
