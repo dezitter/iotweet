@@ -1,3 +1,4 @@
+var util = require('util');
 var express = require('express');
 var Twit = require('twit');
 var twitParams = require('./twit-params');
@@ -7,7 +8,7 @@ var router = express.Router();
 
 function buildSearchQuery(text) {
     return {
-        q: (text || '') + ' #iot',
+        q: util.format('%s OR %s', (text || ''), '#iot'),
         count: process.env.TWITTER_SEARCH_COUNT
     };
 }
